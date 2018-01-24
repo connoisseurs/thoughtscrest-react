@@ -77,7 +77,7 @@ body{
 
 #sidebar ul li a {
   padding:10px;
-  font-size:1.1em;
+  font-size:1 rem;
   display:block;
   color:#fff;
 }

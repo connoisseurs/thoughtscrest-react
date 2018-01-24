@@ -24,17 +24,17 @@ export class TabComponent extends PureComponent {
        }));
    }
    componentDidMount() {
-       fetch("http://127.0.0.1:8080/dummyData.json")
+       fetch("https://gist.githubusercontent.com/jakub-c/95cc4648a34ddd7e52a1b96c45fc6975/raw/98b979e9498e22ce8d6ea523d373911537a92336/weather%2520raw%2520response")
          .then(res => res.json())
          .then(
            (result) => {
              console.log(result)
              this.setState({
                isLoaded: true,
-               items: result.map(({ name, description }, index) => ({
+               items: result.list.map(({ name, id }, index) => ({
                                      key: index,
                                      title: name,
-                                     getContent:()=> description
+                                     getContent:()=> id
                                    }))
              });
            },
