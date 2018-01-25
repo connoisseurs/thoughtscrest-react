@@ -8,6 +8,7 @@ import TabComponent from './containers/TabComponent'
 
 import 'react-responsive-tabs/styles.css';
 import './index.css';
+import './App.css';
 class AppMain extends Component {
   render() {
     return (
@@ -36,27 +37,13 @@ class AppMain extends Component {
       <div class="wrapper">
 
             <LeftMenu />
+              <button type="button" id="sidebarCollapse" class="btn btn-default"      height="100%">
+                                                      <span class="glyphicon glyphicon-resize-horizontal"></span>
+                                                                          </button>
 
             {/* <!-- Page Content Holder --> */}
+
             <div id="content">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                                <i class="glyphicon glyphicon-arrow-left"></i>
-                            </button>
-                        </div>
-                        <div class="navbar navbar-right" id="navcol-1">
-                          <form class="" target="_self">
-                            <div class="input-group">
-                              <input class="form-control search-field"
-                                     placeholder="I can help you to find anything you want!" />
-                              <div class="input-group-addon" ><i class="fa fa-search"></i></div>
-                           </div>
-                          </form>
-                      </div>
-                    </div>
-                </nav>
 
                 <div class="container">
                   <Switch>

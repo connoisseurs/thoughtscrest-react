@@ -4,7 +4,7 @@ class TopNav extends Component {
   render() {
     return (
       <div className="app-header white box-shadow">
-        <div className="navbar">
+        <div className="navbar navbar-inverse" data-spy="affix" data-offset-top="197"">
           {/* <!-- Open side - Naviation on mobile --> */}
           <a data-toggle="modal" data-target="#aside" className="navbar-item pull-left hidden-lg-up">
             <i className="material-icons">&#xe5d2;</i>

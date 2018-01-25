@@ -29,6 +29,30 @@
 .App-intro {
   font-size: large;
 }
+.btn{
+     border-radius: 0;
+  outline: none;
+      padding: .3rem .3rem;
+
+     }
+.btn-default {
+
+  outline: none;
+  background-color:grey;
+}
+
+.btn-default:hover .btn-default:active {
+  outline: none;
+}
+.vr {
+     width:2px;
+     background-color:#000;
+     position:relative;
+     top:10;
+     bottom:0;
+     left:0;
+     height:100%;
+ }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

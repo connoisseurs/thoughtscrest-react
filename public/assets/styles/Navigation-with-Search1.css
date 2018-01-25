@@ -205,7 +205,7 @@
 .navigation-clean-search .navbar-form .search-field {
   background:none;
   border:none;
-  border-bottom:1px solid transparent;
+  border-bottom:1px solid #f5efef;
   border-radius:0;
   color:#ccc;
   box-shadow:none;
