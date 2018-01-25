@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class LeftMenu extends Component {
   render() {
@@ -11,8 +12,10 @@ class LeftMenu extends Component {
 
           <ul class="list-unstyled components">
               <p>Dummy Heading</p>
-              <li class="active">
-                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="glyphicon glyphicon-home"/> Home</a>
+              <li>
+                  {/* <a href="#"><i class="glyphicon glyphicon-home"/> <Link to={`/home`}>Home</Link></a> */}
+                  <Link to={`/home`}><i class="glyphicon glyphicon-home"/> Home</Link>
+                  {/* <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="glyphicon glyphicon-home"/> <Link to={`/home`}>Home</Link></a> */}
                   <ul class="collapse list-unstyled" id="homeSubmenu">
                       <li><a href="#">Home 1</a></li>
                       <li><a href="#">Home 2</a></li>
@@ -28,7 +31,8 @@ class LeftMenu extends Component {
                   </ul>
               </li>
               <li>
-                  <a href="#"><i class="glyphicon glyphicon-bell"/> Notifications</a>
+                  {/* <a href="#"><i class="glyphicon glyphicon-bell"/><Link to={`/about`}>Notifications</Link></a> */}
+                  <Link to={`/notifications`}><i class="glyphicon glyphicon-bell"/> Notifications</Link>
               </li>
           </ul>
 

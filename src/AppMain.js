@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import cs from 'classnames';
+import { Switch, Route } from 'react-router-dom';
 import { Grid, Row, Col, Clearfix } from 'react-bootstrap';
+import About from './containers/about'
 import LeftMenu from './containers/navigation/LeftMenu'
 import TabComponent from './containers/TabComponent'
 
@@ -9,27 +11,6 @@ import './index.css';
 class AppMain extends Component {
   render() {
     return (
-      // <div>
-      //   <LeftMenu />
-      //   {/* <!-- content --> */}
-      //   <div id="content" className="app-content box-shadow-z0" role="main">
-      //      <div className="app-body" id="view">
-      //       <div className="padding">
-      //         <h5 className="_300 margin"><b>AK-CC 210</b></h5>
-      //       </div>
-      //       <div className="padding">
-      //           <div className="p-b-lg clearfix">
-      //             <div className="text-center">
-      //               <h2 className="_700 m-b">ADAP-KOOL</h2>
-      //               <h5 className="m-b-md">AK-PC 420.</h5>
-      //               <p> Pack Controller </p>
-      //                 <img src="assets/controllers/1.png"/>
-      //             </div>
-      //           </div>
-      //       </div>
-      //     </div>
-      //   </div>
-      // </div>
       <div>
       <nav id="navHeader" class="navbar navbar-default navigation-clean-search">
           <div>
@@ -78,7 +59,11 @@ class AppMain extends Component {
                 </nav>
 
                 <div class="container">
-                <TabComponent/>
+                  <Switch>
+                   <Route path='/home' component={About}/>
+                   <Route path='/notifications' component={TabComponent}/>
+                 </Switch>
+                 {/* <TabComponent/> */}
                 </div>
             </div>
         </div>
